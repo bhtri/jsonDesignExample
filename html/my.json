@@ -4,6 +4,12 @@
       "appBar": {
         "type": "app_bar",
         "args": {
+          "title": {
+            "type": "text",
+            "args": {
+              "text": "List of English words"
+            }
+          },
           "actions": [
             {
               "type": "icon_button",
@@ -11,23 +17,18 @@
                 "icon": {
                   "codePoint": 59418,
                   "fontFamily": "MaterialIcons"
-                }
+                },
+                "onPressed": "##simplePrintMessage()##"
               }
             }
-          ],
-          "title": {
-            "type": "text",
-            "args": {
-              "text": "List of English words"
-            }
-          }
+          ]
         }
       },
       "body": {
-          "type": "text",
-          "args": {
-            "text": "Test"
-          }
+        "type": "text",
+        "args": {
+          "text": "data"
+        }
       }
     }
   }
