@@ -25,9 +25,12 @@
         }
       },
       "body": {
-        "type": "text",
-        "args": {
-          "text": "data"
+        "type": "center",
+        "child": {
+          "type": "circular_progress_indicator",
+          "args": {
+            "valueColor": "#f00"
+          }
         }
       }
     }
