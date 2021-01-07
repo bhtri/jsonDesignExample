@@ -11,8 +11,7 @@
                 "icon": {
                   "codePoint": 59418,
                   "fontFamily": "MaterialIcons"
-                },
-                "onPressed": "##noop()##"
+                }
               }
             }
           ],
