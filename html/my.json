@@ -1,0 +1,27 @@
+{
+    "type": "scaffold",
+    "args": {
+        "appBar": {
+          "type": "app_bar",
+          "args": {
+            "actions": [
+              {
+                "type": "icon_button",
+                  "args": {
+                    "icon": {
+                      "codePoint": 59418,
+                      "fontFamily": "MaterialIcons"
+                    },
+                    "onPressed": "##noop()##"
+                  }
+              }
+            ],
+            "title": {
+              "type": "text",
+              "args": {
+                "text": "List of English words"
+              }
+            }
+          }
+        },
+}
