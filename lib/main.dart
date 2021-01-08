@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jsonDesignExample/menu.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,6 +15,6 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        home: Text("Build design from json file"));
+        home: MenuPage());
   }
 }
