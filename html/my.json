@@ -16,7 +16,8 @@
               "args": {
                 "icon": {
                   "codePoint": 59418,
-                  "fontFamily": "MaterialIcons"
+                  "fontFamily": "MaterialIcons",
+                  "matchTextDirection": true
                 },
                 "onPressed": "##click()##"
               }
