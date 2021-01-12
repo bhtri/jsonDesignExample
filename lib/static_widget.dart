@@ -1,5 +1,6 @@
 import 'package:dynamic_widget/dynamic_widget/basic/dynamic_widget_json_exportor.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class StaticWidget extends StatefulWidget {
   @override
@@ -62,8 +63,11 @@ class StaticWidgetState extends State<StaticWidget> {
             onPressed: () {
               var exportor = key.currentWidget as DynamicWidgetJsonExportor;
               var exportJsonString = exportor.exportJsonString();
-              print("test json");
-              print(exportJsonString);
+
+              // クリップボードにコピーする
+              // https://qiita.com/sekitaka_1214/items/24f021605ef4961c746e
+              final data = ClipboardData(text: exportJsonString);
+              Clipboard.setData(data);
             },
             child: Text("export"),
           )
