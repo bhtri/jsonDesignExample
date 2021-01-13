@@ -1,0 +1,105 @@
+{
+    "type": "Container",
+    "alignment": null,
+    "padding": null,
+    "color": null,
+    "margin": null,
+    "constraints": null,
+    "child": {
+      "type": "Scaffold",
+      "body": {
+        "type": "Container",
+        "alignment": null,
+        "padding": null,
+        "color": null,
+        "margin": null,
+        "constraints": null,
+        "child": {
+          "type": "Column",
+          "crossAxisAlignment": "center",
+          "mainAxisAlignment": "start",
+          "mainAxisSize": "max",
+          "textBaseline": "ideographic",
+          "textDirection": null,
+          "verticalDirection": "down",
+          "children": [
+            {
+              "type": "Text",
+              "data": "row1",
+              "textAlign": "start",
+              "overflow": "ellipsis",
+              "maxLines": null,
+              "semanticsLabel": null,
+              "softWrap": null,
+              "textDirection": "ltr",
+              "style": null,
+              "textScaleFactor": null
+            },
+            {
+              "type": "Text",
+              "data": "row2",
+              "textAlign": "start",
+              "overflow": "ellipsis",
+              "maxLines": null,
+              "semanticsLabel": null,
+              "softWrap": null,
+              "textDirection": "ltr",
+              "style": null,
+              "textScaleFactor": null
+            },
+            {
+              "type": "Text",
+              "data": "row3",
+              "textAlign": "start",
+              "overflow": "ellipsis",
+              "maxLines": null,
+              "semanticsLabel": null,
+              "softWrap": null,
+              "textDirection": "ltr",
+              "style": null,
+              "textScaleFactor": null
+            }
+          ]
+        }
+      },
+      "appBar": {
+        "type": "AppBar",
+        "centerTitle": true,
+        "backgroundColor": "ff2196f3",
+        "title": {
+          "type": "Text",
+          "data": "Static Widget",
+          "textAlign": "start",
+          "overflow": "ellipsis",
+          "maxLines": null,
+          "semanticsLabel": null,
+          "softWrap": null,
+          "textDirection": "ltr",
+          "style": null,
+          "textScaleFactor": null
+        },
+        "leading": null,
+        "actions": [
+          {
+            "type": "RaisedButton",
+            "color": "ff2196f3",
+            "disabledColor": null,
+            "disabledElevation": null,
+            "disabledTextColor": null,
+            "elevation": null,
+            "padding": null,
+            "splashColor": null,
+            "textColor": null,
+            "child": {
+              "type": "Icon",
+              "data": "library_add",
+              "size": 40.0,
+              "color": null,
+              "semanticLabel": null,
+              "textDirection": null
+            }
+          }
+        ]
+      }
+    }
+  }
