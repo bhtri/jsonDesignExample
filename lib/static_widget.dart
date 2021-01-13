@@ -13,66 +13,57 @@ class StaticWidget extends StatefulWidget {
 class StaticWidgetState extends State<StaticWidget> {
   GlobalKey key = GlobalKey();
 
+  void click() {
+    print("click");
+  }
+
   @override
   Widget build(BuildContext context) {
     // implement build
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Static Widget"),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.list),
-            onPressed: () {
-              print("click");
-            },
-          ),
-        ],
-      ),
-      body: Column(
-        children: [
-          Expanded(
-            child: DynamicWidgetJsonExportor(
-              key: key,
-              child: Center(
-                child: Column(
-                  children: [
-                    Text("data"),
-                    CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation(Colors.blue),
-                    ),
-                    Text(
-                      "qwertyuiopsadfghjklxcvbnm,.dfghjkcdfvgbhnjdcfvgbhnj",
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.green,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
+    return Column(
+      children: [
+        Expanded(
+          child: DynamicWidgetJsonExportor(
+            key: key,
+            child: Scaffold(
+                appBar: AppBar(
+                  title: Text("Static Widget"),
+                  centerTitle: true,
+                  backgroundColor: Colors.blue,
+                  actions: [
                     RaisedButton(
-                      onPressed: () {
-                        print("click");
-                      },
-                      child: Text("button"),
+                      color: Colors.blue,
+                      onPressed: click,
+                      child: Icon(
+                        Icons.library_add,
+                        size: 40.0,
+                      ),
                     )
                   ],
                 ),
-              ),
-            ),
+                body: Container(
+                  child: Column(
+                    children: [
+                      Text("row1"),
+                      Text("row2"),
+                      Text("row3"),
+                    ],
+                  ),
+                )),
           ),
-          RaisedButton(
-            onPressed: () {
-              var exportor = key.currentWidget as DynamicWidgetJsonExportor;
-              var exportJsonString = exportor.exportJsonString();
+        ),
+        RaisedButton(
+          child: Text("export"),
+          onPressed: () {
+            var exportor = key.currentWidget as DynamicWidgetJsonExportor;
+            var exportJsonString = exportor.exportJsonString();
 
-              // クリップボードにコピーする
-              // https://qiita.com/sekitaka_1214/items/24f021605ef4961c746e
-              final data = ClipboardData(text: exportJsonString);
-              Clipboard.setData(data);
-            },
-            child: Text("export"),
-          )
-        ],
-      ),
+            final data = ClipboardData(text: exportJsonString);
+            Clipboard.setData(data);
+            print("copyed");
+          },
+        ),
+      ],
     );
   }
 }
