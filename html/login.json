@@ -1,0 +1,194 @@
+{
+    "type": "Scaffold",
+    "body": {
+      "type": "Center",
+      "widthFactor": null,
+      "heightFactor": null,
+      "child": {
+        "type": "ListView",
+        "scrollDirection": "vertical",
+        "reverse": false,
+        "shrinkWrap": true,
+        "cacheExtent": 0.0,
+        "padding": "20.0,0.0,20.0,0.0",
+        "itemExtent": null,
+        "pageSize": 10,
+        "loadMoreUrl": null,
+        "isDemo": false,
+        "children": [
+          {
+            "type": "Container",
+            "alignment": null,
+            "padding": null,
+            "color": null,
+            "margin": "5.0,5.0,5.0,5.0",
+            "constraints": null,
+            "child": {
+              "type": "Text",
+              "data": "ログイン情報を入力してください",
+              "textAlign": "center",
+              "overflow": "ellipsis",
+              "maxLines": null,
+              "semanticsLabel": null,
+              "softWrap": null,
+              "textDirection": "ltr",
+              "style": {
+                "color": "ff00bcd4",
+                "debugLabel": null,
+                "decoration": "none",
+                "fontSize": 20.0,
+                "fontFamily": null,
+                "fontStyle": "normal",
+                "fontWeight": "normal"
+              },
+              "textScaleFactor": null
+            }
+          },
+          {
+            "type": "Container",
+            "alignment": null,
+            "padding": null,
+            "color": null,
+            "margin": "5.0,5.0,5.0,5.0",
+            "constraints": null,
+            "child": {
+              "type": "Text",
+              "data": "OpenCV Version ",
+              "textAlign": "center",
+              "overflow": "ellipsis",
+              "maxLines": null,
+              "semanticsLabel": null,
+              "softWrap": null,
+              "textDirection": "ltr",
+              "style": {
+                "color": "ff000000",
+                "debugLabel": null,
+                "decoration": "none",
+                "fontSize": 20.0,
+                "fontFamily": null,
+                "fontStyle": "normal",
+                "fontWeight": "normal"
+              },
+              "textScaleFactor": null
+            }
+          },
+          {
+            "type": "Container",
+            "alignment": null,
+            "padding": "5.0,5.0,5.0,5.0",
+            "color": null,
+            "margin": "15.0,15.0,15.0,15.0",
+            "constraints": null,
+            "child": null
+          },
+          {
+            "type": "Container",
+            "alignment": null,
+            "padding": "5.0,5.0,5.0,5.0",
+            "color": null,
+            "margin": "15.0,15.0,15.0,15.0",
+            "constraints": null,
+            "child": null
+          },
+          {
+            "type": "Container",
+            "alignment": null,
+            "padding": null,
+            "color": null,
+            "margin": "15.0,15.0,15.0,15.0",
+            "constraints": null,
+            "child": {
+              "type": "Material",
+              "color": "ff4caf50",
+              "shadowColor": null,
+              "borderOnForeground": true,
+              "child": {
+                "type": "MaterialButton",
+                "child": {
+                  "type": "Text",
+                  "data": "Login",
+                  "textAlign": "start",
+                  "overflow": "ellipsis",
+                  "maxLines": null,
+                  "semanticsLabel": null,
+                  "softWrap": null,
+                  "textDirection": "ltr",
+                  "style": {
+                    "color": "ffffffff",
+                    "debugLabel": null,
+                    "decoration": "none",
+                    "fontSize": 18.0,
+                    "fontFamily": null,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                  },
+                  "textScaleFactor": null
+                },
+                "autofocus": false,
+                "color": null,
+                "disabledColor": null,
+                "disabledElevation": null,
+                "disabledTextColor": null,
+                "elevation": null,
+                "focusColor": null,
+                "focusElevation": null,
+                "height": null,
+                "highlightColor": null,
+                "highlightElevation": null,
+                "hoverColor": null,
+                "hoverElevation": null,
+                "minWidth": 200.0,
+                "shape": null,
+                "splashColor": null,
+                "textColor": null,
+                "padding": null
+              },
+              "shape": {
+                "type": "RoundedRectangleBorder",
+                "borderRadius": "10.0,10.0,10.0,10.0"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "appBar": {
+      "type": "AppBar",
+      "centerTitle": true,
+      "backgroundColor": "ff2196f3",
+      "title": {
+        "type": "Text",
+        "data": "Static Widget",
+        "textAlign": "start",
+        "overflow": "ellipsis",
+        "maxLines": null,
+        "semanticsLabel": null,
+        "softWrap": null,
+        "textDirection": "ltr",
+        "style": null,
+        "textScaleFactor": null
+      },
+      "leading": null,
+      "actions": [
+        {
+          "type": "RaisedButton",
+          "color": "ff2196f3",
+          "disabledColor": null,
+          "disabledElevation": null,
+          "disabledTextColor": null,
+          "elevation": null,
+          "padding": null,
+          "splashColor": null,
+          "textColor": null,
+          "child": {
+            "type": "Icon",
+            "data": "library_add",
+            "size": 40.0,
+            "color": null,
+            "semanticLabel": null,
+            "textDirection": null
+          }
+        }
+      ]
+    }
+  }
