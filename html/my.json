@@ -61,7 +61,7 @@
     "backgroundColor": "ff2196f3",
     "title": {
       "type": "Text",
-      "data": "Static Widget",
+      "data": "Hello World!!!",
       "textAlign": "start",
       "overflow": "ellipsis",
       "maxLines": null,

@@ -329,7 +329,7 @@
     "backgroundColor": "ff2196f3",
     "title": {
       "type": "Text",
-      "data": "Static Widget",
+      "data": "Login Screen",
       "textAlign": "start",
       "overflow": "ellipsis",
       "maxLines": null,
