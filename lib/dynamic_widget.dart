@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class DynamicWidget extends StatelessWidget {
-  final url = "https://bhtri.github.io/jsonDesignExample/html/login.json";
+  final url = "https://bhtri.github.io/jsonDesignExample/html/list.json";
 
   @override
   Widget build(BuildContext context) {
