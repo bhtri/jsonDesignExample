@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jsonDesignExample/dynamic_widget.dart';
-import 'package:jsonDesignExample/static_widget.dart';
+import 'package:jsonDesignExample/static1_widget.dart';
 
 class MenuPage extends StatefulWidget {
   @override
@@ -42,11 +42,11 @@ class _MenuPageState extends State<MenuPage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => StaticWidget(),
+                    builder: (context) => StaticLoginWidget(),
                   ),
                 );
               },
-              child: Text("Static"),
+              child: Text("Static 1: Login"),
               color: Colors.red,
               shape: StadiumBorder(),
             ),

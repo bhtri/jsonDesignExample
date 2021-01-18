@@ -3,15 +3,15 @@ import 'package:dynamic_widget/dynamic_widget/scrolling/listview_widget_parser.d
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class StaticWidget extends StatefulWidget {
+class StaticLoginWidget extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     // implement createState
-    return StaticWidgetState();
+    return StaticLoginWidgetState();
   }
 }
 
-class StaticWidgetState extends State<StaticWidget> {
+class StaticLoginWidgetState extends State<StaticLoginWidget> {
   GlobalKey key = GlobalKey();
 
   void click() {
