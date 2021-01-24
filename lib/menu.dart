@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jsonDesignExample/dynamic_widget.dart';
 import 'package:jsonDesignExample/static1_widget.dart';
 import 'package:jsonDesignExample/static2_widget.dart';
+import 'package:jsonDesignExample/static3_widget.dart';
 
 class MenuPage extends StatefulWidget {
   @override
@@ -61,6 +62,19 @@ class _MenuPageState extends State<MenuPage> {
                 );
               },
               child: Text("Static 2: List"),
+              color: Colors.red,
+              shape: StadiumBorder(),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Static3Widget(),
+                  ),
+                );
+              },
+              child: Text("Static 3: Scaffold"),
               color: Colors.red,
               shape: StadiumBorder(),
             ),
